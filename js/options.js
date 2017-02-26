@@ -16,7 +16,7 @@ function save_options() {
 
 function restore_options() {
     chrome.storage.sync.get({
-        nerURL: 'https://ner.livelace.ru',
+        nerURL: 'https://example.com/api',
         nerTimeout: 3000
     }, function(items) {
         document.getElementById('nerURL').value = items.nerURL;
