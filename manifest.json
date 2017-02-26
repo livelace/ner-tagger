@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "ner-tagger",
-  "description": "This extension allows to wrap NER tags and save sentences to a server.",
+  "description": "This extension serves for fast wrapping of NER tags and for saving sentences on a server.",
   "version": "0.1",
 
   "background": {
