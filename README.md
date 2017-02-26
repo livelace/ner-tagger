@@ -7,3 +7,8 @@ It's intended for working with [OpenNLP](https://opennlp.apache.org/) project.
 
 1. [jQuery](https://jquery.com/)
 2. [Annotatorjs](http://annotatorjs.org/)
+
+
+#### Screenshot:
+
+![screenshot](img/screenshot.png)
