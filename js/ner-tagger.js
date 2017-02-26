@@ -87,11 +87,10 @@ var nertagger = {
 
     getEditorExtension: function editorExtension(editor) {
         editor.addButton = nertagger.addButton;
-        editor.addButton()
+        editor.addButton();
         editor._pre_ner_show = editor.show;
         editor.show = nertagger.show;
         editor.submit = nertagger.submit;
-        editor.defaultNotifier
     }
 };
 
