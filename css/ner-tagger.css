@@ -1,0 +1,52 @@
+.ner-tagger {
+    margin: 1px;
+    padding: 1px;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    color: #fff;
+
+    border: 1px solid #9c9c9c;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.ner-tagger, .ner-tagger span {
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+}
+
+.ner-tagger span {
+    border-top: 1px solid #fff; /* Fallback style */
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    display: block;
+    padding: 0.5em 2.5em;
+
+    /* The background pattern */
+
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(0, 0, 0, 0.05)), color-stop(.25, transparent), to(transparent)),
+    -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(0, 0, 0, 0.05)), color-stop(.25, transparent), to(transparent)),
+    -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, rgba(0, 0, 0, 0.05))),
+    -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, rgba(0, 0, 0, 0.05)));
+    background-image: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent),
+    -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent),
+    -moz-linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.05) 75%),
+    -moz-linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.05) 75%);
+
+    /* Pattern settings */
+
+    -moz-background-size: 3px 3px;
+    -webkit-background-size: 3px 3px;
+}
+
+.ner-tagger:hover {
+    box-shadow: 0 0 .1em rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 .1em rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 .1em rgba(0, 0, 0, 0.4);
+}
+
+.ner-tagger:active {
+    /* When pressed, move it down 1px */
+    position: relative;
+    top: 1px;
+}
