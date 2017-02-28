@@ -80,8 +80,8 @@ var nertagger = {
         //this.element.find('textarea:first').css('font-size', '11px');
 
         // Set width of the main window
-        this.element.find('.annotator-widget').css('min-width', '283px');
-        this.element.find('textarea:first').css('height', '283px');
+        this.element.find('.annotator-widget').css('min-width', '300px');
+        this.element.find('textarea:first').css('height', '300px');
 
         // Call original editor.show function
         this._pre_ner_show(position);
