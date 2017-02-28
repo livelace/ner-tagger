@@ -9,12 +9,13 @@ var nertagger = {
         var tag_type = new Array('<', '>');        // for BBCode tag, replace with:  new Array('[', ']');
         var txta = document.getElementById('annotator-field-0');
         var start = tag_type[0] + start_tag + tag_type[1];
-        var end = tag_type[0] +'/'+ end_tag +  tag_type[1];
+        var end = tag_type[0] + end_tag +  tag_type[1];
 
         if (txta.selectionStart || txta.selectionStart == "0") {
             var startPos = txta.selectionStart;
             var endPos = txta.selectionEnd;
-            var tag_seltxt = start + txta.value.substring(startPos, endPos) + end;
+            // Spaces need for an avoidance of OpenNLP parsing errors
+            var tag_seltxt = ' ' + start + ' ' + txta.value.substring(startPos, endPos) + ' ' + end + ' ';
             txta.value = txta.value.substring(0, startPos) + tag_seltxt + txta.value.substring(endPos, txta.value.length);
 
             // Place the cursor between formats in #txta
