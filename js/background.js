@@ -1,7 +1,7 @@
-function send_data (message, sender, sendResponse) {
+function send_data (message, page_url, sender, sendResponse) {
 
     chrome.storage.sync.get(['nerURL', 'nerTimeout'], function (result) {
-        var content = {content: message}
+        var content = {content: message, url: encodeURIComponent(page_url)}
 
         $.ajax({
             url: result.nerURL,
@@ -20,6 +20,12 @@ function send_data (message, sender, sendResponse) {
 }
 
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-    send_data(message, sender, sendResponse);
-    return true;
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        var tab = tabs[0];
+        var page_url = tab.url;
+        //console.log(page_url);
+
+        send_data(message, page_url, sender, sendResponse);
+        return true;
+    });
 });

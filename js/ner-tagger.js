@@ -26,7 +26,7 @@ var nertagger = {
 
     submit: function () {
         chrome.runtime.sendMessage(this.element.find('textarea:first').val(), function (response) {
-            console.log(response);
+            //console.log(response);
             if (response.status === 'error') {
                 annotator.notification.defaultNotifier("Have not been sent: " + response.code + " " + response.text,'error');
             }
