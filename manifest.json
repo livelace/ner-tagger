@@ -3,7 +3,7 @@
 
   "name": "ner-tagger",
   "description": "This extension serves for quick text wrapping in NER tags and for saving sentences on a server.",
-  "version": "0.0.2",
+  "version": "0.0.3",
 
   "background": {
     "scripts": [
