@@ -3,7 +3,15 @@
 
   "name": "ner-tagger",
   "description": "This extension serves for quick text wrapping in NER tags and for saving sentences on a server.",
-  "version": "0.0.3",
+  "version": "0.0.4",
+
+  "applications": {
+      "gecko": {
+        "id": "ner-tagger@livelace.org",
+          "strict_min_version": "57.0",
+          "strict_max_version": "*"
+      }
+  },
 
   "background": {
     "scripts": [
