@@ -2,7 +2,7 @@
 
 **UPDATE (30.04.2018):**
 
-**The extension isn't available in [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/) due higher requirements for used libraries. [Chrome Web Store](https://chrome.google.com/webstore) spreads the extension without any restrictions.**
+**The extension doesn't available in [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/) due higher requirements for used libraries. [Chrome Web Store](https://chrome.google.com/webstore) spreads the extension without any restrictions.**
 
 *ner-tagger* serves for fast wrapping of [NER](https://en.wikipedia.org/wiki/Named-entity_recognition) tags and saving labeled text on a server ([ner-store](https://github.com/livelace/ner-store)).
 It's intended for working with [OpenNLP](https://opennlp.apache.org/) project.
