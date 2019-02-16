@@ -17,7 +17,6 @@ Some prebuilt [OpenNLP](https://opennlp.apache.org/) models that were derived wi
 1. [jQuery](https://jquery.com/)
 2. [Annotatorjs](http://annotatorjs.org/)
 
-
 #### Screenshot:
 
 ![screenshot](img/screenshot.png)
