@@ -48,24 +48,26 @@ var nertagger = {
 
         field.element = element[0];
 
-        var button1 = $('<button id="ner-btn1" type="button" class="ner-tagger" style="padding: 1px; margin: 1px">date</button>');
-        var button2 = $('<button id="ner-btn2" type="button" class="ner-tagger" style="padding: 1px; margin: 1px">location</button>');
-        var button3 = $('<button id="ner-btn3" type="button" class="ner-tagger" style="padding: 1px; margin: 1px">money</button>');
-        var button4 = $('<button id="ner-btn4" type="button" class="ner-tagger" style="padding: 1px; margin: 1px">organization</button>');
-        var button5 = $('<button id="ner-btn5" type="button" class="ner-tagger" style="padding: 1px; margin: 1px">person</button>');
-        var button6 = $('<button id="ner-btn6" type="button" class="ner-tagger" style="padding: 1px; margin: 1px">time</button>');
+        var button1 = $('<button id="ner-btn1" type="button" class="ner-tagger" style="padding: 1px; margin: 1px">DATE</button>');
+        var button2 = $('<button id="ner-btn2" type="button" class="ner-tagger" style="padding: 1px; margin: 1px">GPE</button>');
+        var button3 = $('<button id="ner-btn3" type="button" class="ner-tagger" style="padding: 1px; margin: 1px">LOC</button>');
+        var button4 = $('<button id="ner-btn4" type="button" class="ner-tagger" style="padding: 1px; margin: 1px">MONEY</button>');
+        var button5 = $('<button id="ner-btn5" type="button" class="ner-tagger" style="padding: 1px; margin: 1px">ORG</button>');
+        var button6 = $('<button id="ner-btn6" type="button" class="ner-tagger" style="padding: 1px; margin: 1px">PER</button>');
+        var button7 = $('<button id="ner-btn7" type="button" class="ner-tagger" style="padding: 1px; margin: 1px">TIME</button>');
 
-        element.append(button1,button2,button3,button4,button5,button6);
+        element.append(button1,button2,button3,button4,button5,button6,button7);
 
         // Chrome secuirty doesn't allow to use 'onClick'
 
         $(document).ready(function() {
-            $("#ner-btn1").click({name: "date"}, nertagger.wrapTag);
-            $("#ner-btn2").click({name: "location"}, nertagger.wrapTag);
-            $("#ner-btn3").click({name: "money"}, nertagger.wrapTag);
-            $("#ner-btn4").click({name: "organization"}, nertagger.wrapTag);
-            $("#ner-btn5").click({name: "person"}, nertagger.wrapTag);
-            $("#ner-btn6").click({name: "time"}, nertagger.wrapTag);
+            $("#ner-btn1").click({name: "DATE"}, nertagger.wrapTag);
+            $("#ner-btn2").click({name: "GPE"}, nertagger.wrapTag);
+            $("#ner-btn3").click({name: "LOC"}, nertagger.wrapTag);
+            $("#ner-btn4").click({name: "MONEY"}, nertagger.wrapTag);
+            $("#ner-btn5").click({name: "ORG"}, nertagger.wrapTag);
+            $("#ner-btn6").click({name: "PER"}, nertagger.wrapTag);
+            $("#ner-btn7").click({name: "TIME"}, nertagger.wrapTag);
         });
 
         this.element.find('ul:first').append(element);

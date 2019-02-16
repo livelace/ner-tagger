@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "ner-tagger",
-  "description": "This extension serves for quick text wrapping in NER tags and for saving sentences on a server.",
-  "version": "0.0.4",
+  "description": "This addon acts as a text annotation tool, whose main purpose is give a faster way to build up a dataset for machine learning.",
+  "version": "0.0.5",
 
   "applications": {
       "gecko": {
