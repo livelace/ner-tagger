@@ -3,7 +3,7 @@
 
   "name": "ner-tagger",
   "description": "This addon acts as a text annotation tool, whose main purpose is give a faster way to build up a dataset for machine learning.",
-  "version": "0.0.6",
+  "version": "0.0.8",
 
   "applications": {
       "gecko": {
