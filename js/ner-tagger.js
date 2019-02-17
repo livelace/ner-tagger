@@ -49,26 +49,28 @@ var nertagger = {
         field.element = element[0];
 
         var button1 = $('<button id="ner-btn1" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">DATE</button>');
-        var button2 = $('<button id="ner-btn2" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">FAC</button>');
-        var button3 = $('<button id="ner-btn3" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">GPE</button>');
-        var button4 = $('<button id="ner-btn4" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">LOC</button>');
-        var button5 = $('<button id="ner-btn5" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">MONEY</button>');
-        var button6 = $('<button id="ner-btn6" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">ORG</button>');
-        var button7 = $('<button id="ner-btn7" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">PER</button>');
-        var button8 = $('<button id="ner-btn8" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">TIME</button>');
+        var button2 = $('<button id="ner-btn2" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">EVENT</button>');
+        var button3 = $('<button id="ner-btn3" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">FAC</button>');
+        var button4 = $('<button id="ner-btn4" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">GPE</button>');
+        var button5 = $('<button id="ner-btn5" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">LOC</button>');
+        var button6 = $('<button id="ner-btn6" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">MONEY</button>');
+        var button7 = $('<button id="ner-btn7" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">ORG</button>');
+        var button8 = $('<button id="ner-btn8" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">PER</button>');
+        var button9 = $('<button id="ner-btn9" type="button" class="ner-tagger" style="padding: 1px 5px; margin: 1px">TIME</button>');
 
-        element.append(button1,button2,button3,button4,button5,button6,button7,button8);
+        element.append(button1,button2,button3,button4,button5,button6,button7,button8,button9);
 
         // Chrome secuirty doesn't allow to use 'onClick'
         $(document).ready(function() {
             $("#ner-btn1").click({name: "DATE"}, nertagger.wrapTag);
-            $("#ner-btn2").click({name: "FAC"}, nertagger.wrapTag);
-            $("#ner-btn3").click({name: "GPE"}, nertagger.wrapTag);
-            $("#ner-btn4").click({name: "LOC"}, nertagger.wrapTag);
-            $("#ner-btn5").click({name: "MONEY"}, nertagger.wrapTag);
-            $("#ner-btn6").click({name: "ORG"}, nertagger.wrapTag);
-            $("#ner-btn7").click({name: "PER"}, nertagger.wrapTag);
-            $("#ner-btn8").click({name: "TIME"}, nertagger.wrapTag);
+            $("#ner-btn2").click({name: "EVENT"}, nertagger.wrapTag);
+            $("#ner-btn3").click({name: "FAC"}, nertagger.wrapTag);
+            $("#ner-btn4").click({name: "GPE"}, nertagger.wrapTag);
+            $("#ner-btn5").click({name: "LOC"}, nertagger.wrapTag);
+            $("#ner-btn6").click({name: "MONEY"}, nertagger.wrapTag);
+            $("#ner-btn7").click({name: "ORG"}, nertagger.wrapTag);
+            $("#ner-btn8").click({name: "PER"}, nertagger.wrapTag);
+            $("#ner-btn9").click({name: "TIME"}, nertagger.wrapTag);
         });
 
         this.element.find('ul:first').append(element);
@@ -83,7 +85,7 @@ var nertagger = {
         //this.element.find('textarea:first').css('font-size', '11px');
 
         // Set width of the main window
-        this.element.find('.annotator-widget').css('min-width', '344px');
+        this.element.find('.annotator-widget').css('min-width', '396px');
         this.element.find('textarea:first').css('height', '310px');
 
         // Call original editor.show function
