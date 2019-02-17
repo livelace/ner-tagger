@@ -4,8 +4,9 @@
     text-decoration: none;
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-weight: normal;
+    font-size: 12px;
     display: inline-block;
-    color: #909090;
+    color: #505050;
 
     border: 1px solid #9c9c9c;
     border: 1px solid rgba(0, 0, 0, 0.3);
